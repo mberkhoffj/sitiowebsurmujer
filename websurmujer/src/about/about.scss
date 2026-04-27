@@ -1,0 +1,270 @@
+.container-team {
+  overflow: hidden;
+  height: 500px;
+  background: white;
+  width: 100%;
+
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    display: none;
+  }
+}
+
+.image {
+  transform: translateX(20%);
+  background: url("@/assets/team2.jpg") no-repeat center bottom/contain !important;
+  height: inherit;
+  width: 100%;
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    height: 35vh;
+    background: url("@/assets/team2.jpg") no-repeat center bottom/contain !important;
+  }
+}
+.image-person {
+  > img {
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 350px;
+  }
+}
+
+.about-main {
+  background-color: #f2f3fa;
+  margin-bottom: 2rem;
+}
+
+.container-title {
+  width: 73%;
+  margin: 1rem auto auto auto;
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    margin: 5rem auto auto auto;
+    flex-wrap: wrap;
+  }
+}
+
+.about {
+  margin: 1rem auto auto 13rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 1rem !important;
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    margin: 1rem auto auto auto;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1100px) and (min-width: 700px) {
+    margin: 1rem auto auto auto;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.team {
+  @media screen and (max-width: 1024px) and (min-width: 700px) {
+    align-items: center;
+  }
+}
+
+.line {
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  border-top: #d2d5e8 solid 1px;
+  margin-top: 0.3rem;
+
+  width: 100%;
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    align-items: center;
+  }
+
+  + * {
+    margin-top: 0.5rem;
+  }
+}
+
+.line2 {
+  font-size: 13px;
+  line-height: 1.6;
+  font-weight: 400;
+  border-top: #d2d5e8 solid 1px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  width: 100%;
+}
+.salto {
+  margin-top: 1rem;
+}
+
+.card-team {
+  display: grid;
+  grid-template-rows: 1fr 30px 13px 9px auto;
+  gap: 0.5rem;
+  width: 280px;
+
+  > h2,
+  h3 {
+    margin-top: 0.2rem;
+    white-space: nowrap;
+    color: #281b74;
+  }
+  > * > p {
+    color: #281b74;
+    font-size: 0.9rem;
+    line-height: 19px;
+    font-weight: normal;
+  }
+  > .sub-title-card {
+    font-size: 14px;
+    font-weight: 600;
+    color: #79ad9f;
+  }
+}
+
+.title-team {
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    display: none;
+  }
+}
+
+.title-team-xs {
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    order: -2;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 9000px) and (min-width: 1025px) {
+    display: none;
+  }
+}
+
+// card banner scss
+
+.card-banner {
+  padding: 1rem 1rem;
+  position: relative;
+  top: 9rem;
+  left: -15%;
+  width: 500px;
+  height: 220px;
+  background-color: rgba(126, 133, 148, 0.1);
+  opacity: 1;
+  cursor: pointer;
+
+  @media screen and (max-width: 900px) and (min-width: 700px) {
+    top: 5rem;
+    left: -18%;
+
+    width: 220px;
+    height: 390px;
+  }
+
+  @media screen and (max-width: 1450px) and (min-width: 1000px) {
+    top: 5rem;
+
+    width: 300px;
+    height: 380px;
+  }
+
+  > p {
+    @media screen and (max-width: 900px) and (min-width: 700px) {
+      font-size: 12px;
+    }
+    color: #281b74;
+
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  > .line {
+    font-size: 20px;
+  }
+  > h1 {
+    font-weight: bold;
+  }
+}
+
+.card-banner:hover {
+  background-color: rgba(126, 133, 148, 0.3);
+  transition: background-color 1000ms linear;
+}
+.line-about {
+  padding-bottom: 0.3rem;
+  padding-top: 1rem;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  border-top: #d2d5e8 solid 1px;
+  margin-top: 0.3rem;
+  width: 100%;
+}
+.line-about-deads {
+  padding-bottom: 0.3rem;
+  padding-top: 1rem;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 400;
+  border-top: #d2d5e8 solid 1px;
+  margin-top: 0.3rem;
+  width: 73%;
+  margin-left: 13rem;
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    width: 73%;
+    margin-left: 3rem;
+  }
+}
+
+.card-vision {
+  margin-left: 10rem;
+  padding: 1rem 3rem;
+  position: relative;
+  width: 500px;
+  height: fit-content;
+  cursor: pointer;
+  //background-color: rgba(126, 133, 148, 0.1);
+  opacity: 1;
+  cursor: pointer;
+  > h1 {
+    font-weight: bold;
+  }
+  @media screen and (max-width: 1100px) and (min-width: 200px) {
+    margin-left: 0rem;
+    width: 100%;
+    order: -2;
+    color: #281b74;
+
+    // background-color: rgba(56, 32, 76, 0.9);
+  }
+
+  > h1 {
+    @media screen and (max-width: 1100px) and (min-width: 200px) {
+      color: #281b74;
+      text-align: left;
+    }
+  }
+
+  > p {
+    color: #281b74;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 1100px) and (min-width: 200px) {
+    }
+  }
+
+  > .line {
+    font-size: 20px;
+    border-top: #7984ce solid 1px;
+  }
+}
+.subtitle-line {
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 18px;
+  color: #281b74;
+}

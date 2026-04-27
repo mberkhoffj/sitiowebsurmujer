@@ -1,0 +1,211 @@
+.fquestion {
+    margin: 100px auto auto auto;
+    width: 90%;
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+  
+    > *:nth-child(1) {
+      height: fit-content;
+      width: 90%;
+      margin: 0 auto;
+      @media screen and (max-width: 600px) and (min-width: 200px) {
+        width: 100%;
+      }
+    }
+    > *:nth-child(2) {
+      width: 85%;
+      height: 70%;
+      @media screen and (max-width: 600px) and (min-width: 200px) {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+  
+  .container-questions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+  
+    @media screen and (max-width: 1024px) and (min-width: 200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .question-item {
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: background-color 0.4s ease-in, fill 0.4s ease-out;
+    width: 80%;
+    border: 2px solid transparent;
+  
+    > p {
+      padding-top: 1rem;
+      color: rgb(105, 86, 216);
+      font-weight: 700;
+      font-size: 18px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    @media screen and (max-width: 600px) and (min-width: 200px) {
+      width: 100%;
+      > p {
+        font-size: 15px;
+      }
+    }
+  
+    &:hover {
+      background-color: rgb(105, 86, 216);
+      > svg {
+        fill: white;
+      }
+      > p {
+        color: white;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+    }
+  
+    > svg {
+      @media screen and (max-width: 600px) and (min-width: 200px) {
+        width: 60px;
+        height: 60px;
+      }
+      fill: rgb(105, 86, 216);
+      width: 64px;
+      height: 64px;
+    }
+  }
+  
+  .question-item.active {
+    border: 2px solid #24b99c;
+    background-color: rgb(105, 86, 216);
+    > svg {
+      fill: white;
+    }
+    > p {
+      color: white;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+  
+    @media screen and (max-width: 600px) and (min-width: 200px) {
+      font-size: 15px;
+      width: 100%;
+    }
+  }
+  
+  //section 2 preguntas
+  
+  .anwsers {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .contenedor-preguntas {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  
+  .contenedor-pregunta {
+    background: white;
+    padding: 20px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s ease all;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  
+    &:hover {
+      border: 2px solid #24b99c;
+    }
+  
+    &.activeplus {
+      color: white;
+      border: 2px solid #24b99c;
+      background-color: rgb(105, 86, 216);
+    }
+  
+    &.activeplus .respuesta {
+      opacity: 1;
+      margin-top: 1rem;
+    }
+  
+    &.activeplus .pregunta {
+      color: white;
+    }
+  
+    &.activeplus svg {
+      transform: rotate(45deg);
+      fill: white;
+    }
+  }
+  
+  .pregunta {
+    font-weight: 700;
+    padding-top: 10px;
+    font-size: 24px;
+    line-height: 1.5;
+    width: 90%;
+    color: rgb(105, 86, 216);
+    + svg {
+      width: 22px !important;
+      height: 22px !important;
+      fill: rgb(105, 86, 216);
+    }
+  
+    @media screen and (max-width: 600px) and (min-width: 200px) {
+      font-size: 18px;
+      + svg {
+        width: 18px !important;
+        height: 18px !important;
+        fill: rgb(105, 86, 216);
+      }
+    }
+  
+    @media screen and (max-width: 1024px) and (min-width: 600px) {
+      font-size: 17px;
+    }
+  }
+  .question-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .respuesta {
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.1 ease all;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    list-style: none;
+  }
+  

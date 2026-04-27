@@ -1,0 +1,145 @@
+<template>
+  <header>
+    <div class="logo">
+      <router-link to="/" exact class="nav-item nav-link">
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 500.91 132.77"
+        >
+          <defs></defs>
+          <title>Sur Mujer LTDA</title>
+          <path
+            class="cls-1"
+            d="M491.4,57.94,436.22,41.27l-.44-.13-23.37,5.75L447,57.67l1-3.15-23.32-7.26,11-2.71,43.58,13.17-26.47,7L250.45,11.48,48.11,64.68l-26.48-7L65.21,44.55l11,2.71L52.9,54.52l1,3.15L88.5,46.89,65.12,41.14,9.51,57.94l32.11,8.44L9.51,74.83l55.61,16.8L88.5,85.88,53.88,75.1l-1,3.15,23.32,7.26-11,2.7L21.63,75.05l26.48-7,202.34,53.2L452.8,68.09l26.47,7L435.69,88.21l-11-2.7L448,78.25l-1-3.15L412.41,85.88l23.37,5.75,55.62-16.8-32.12-8.45ZM250.45,117.88,54.59,66.38,250.45,14.89,446.32,66.38Z"
+          />
+          <path
+            class="cls-1"
+            d="M76.27,66.38l174.18,35.86L424.64,66.38,250.45,30.53Zm174.18,32.5L92.61,66.38,250.45,33.89,408.29,66.38Z"
+          />
+          <path
+            class="cls-1"
+            d="M238.64,37.91v8.5h-8.85v9.7h-16V76.65h16v11.1h8.85v7.11h23.63V87.75h8.85V76.65h16V56.11h-16v-9.7h-8.85v-8.5Zm-8.85,36.27h-13.5V58.59h13.5Zm8.85,0h-6.38V58.59h6.38Zm21.16,18.2H241.11V87.75H259.8Zm0-7.11H241.11V76.65H259.8Zm0-29.16H241.11V48.88H259.8Zm0-9.7H241.11v-6H259.8Zm11.32,12.18h13.49V74.18H271.12Zm-2.47,0V74.18h-6.38V58.59Z"
+          />
+          <path
+            class="cls-1"
+            d="M202.37,55.32h-6.75L191.3,51,187,55.32h-6.75v6.75l-4.31,4.31,4.31,4.32v6.75H187l4.31,4.31,4.32-4.31h6.75V70.7l4.31-4.32-4.31-4.31Zm-5,17.18H185.18V60.27h12.24Z"
+          />
+          <path
+            class="cls-1"
+            d="M151.55,60.17h-3.79l-2.43-2.42-2.42,2.42h-3.79V64l-2.42,2.42,2.42,2.43V72.6h3.79L145.33,75l2.43-2.42h3.79V68.81L154,66.38,151.55,64Zm-2.78,9.65H141.9V63h6.87Z"
+          />
+          <path
+            class="cls-1"
+            d="M298.54,77.45h6.75l4.31,4.31,4.32-4.31h6.75V70.7L325,66.38l-4.31-4.31V55.32h-6.75L309.6,51l-4.31,4.31h-6.75v6.75l-4.31,4.31,4.31,4.32Zm4.94-17.18h12.24V72.5H303.48Z"
+          />
+          <path
+            class="cls-1"
+            d="M349.36,72.6h3.79L355.57,75,358,72.6h3.79V68.81l2.42-2.43L361.79,64V60.17H358l-2.43-2.42-2.42,2.42h-3.79V64l-2.42,2.42,2.42,2.43ZM352.14,63H359v6.87h-6.87Z"
+          />
+        </svg>
+      </router-link>
+
+      <router-link to="/" class="logo-title no-seleccionable">
+        <span>Sur</span>
+        <p>Mujer LTDA</p>
+      </router-link>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul class="no-seleccionable nav-conteiner">
+        <div class="nav-link-common">
+          <li @click="hideNav()">
+            <router-link to="/" exact class="nav-item nav-link">
+              Inicio
+            </router-link>
+          </li>
+
+          <li @click="hideNav()">
+            <router-link
+              to="/proyectos"
+              exact
+              class="nav-item nav-link"
+              :class="$route.path === '/proyectos' ? 'active' : ''"
+            >
+              Proyectos
+            </router-link>
+          </li>
+
+          <li @click="hideNav()">
+            <router-link
+              to="/preguntas-frecuentes"
+              exact
+              class="nav-item nav-link"
+              :class="$route.path === '/preguntas-frecuentes' ? 'active' : ''"
+            >
+              Preguntas Frecuentes
+            </router-link>
+          </li>
+
+          <li @click="hideNav()">
+            <router-link
+              to="/sobre-nosotros"
+              exact
+              :class="$route.path === '/sobre-nosotros' ? 'active' : ''"
+              class="nav-item nav-link"
+            >
+              Sobre Nosotros
+            </router-link>
+          </li>
+          <li @click="hideNav()">
+            <router-link
+              to="/contacto"
+              exact
+              :class="$route.path === '/contacto' ? 'active' : ''"
+              class="nav-item nav-link"
+            >
+              Contacto
+            </router-link>
+          </li>
+        </div>
+        <div class="nav-link-special">
+          <li @click="hideNav()">
+            <router-link
+              to="/placeholderuniversidad"
+              exact
+              class="nav-item nav-link-special"
+              :class="$route.path === '/placeholderuniversidad' ? 'active' : ''"
+            >
+              Centro de practica
+            </router-link>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <label @click="toggleNav()" for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      showNav: true,
+      routes: [{ path: "/" }, { path: "/proyectos" }, { path: "/contact" }],
+    };
+  },
+  methods: {
+    hideNav() {
+      this.showNav = false;
+    },
+    toggleNav() {
+      this.showNav = true;
+      console.log(this.showNav);
+    },
+  },
+};
+</script>
+
+<style lang="scss">
+@import "./nav.scss";
+</style>

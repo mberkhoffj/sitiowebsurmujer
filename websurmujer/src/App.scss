@@ -1,0 +1,92 @@
+@import "./ui/nav/nav.scss", 
+  "./dashboard/dashboard.scss", "./ui/footer/footer.scss",
+  "./fquestions/fquestion.scss", "./contacto/contacto.scss",
+  "./about/about.scss", "./whatsapp/whatsapp.scss", "./proyects/proyects.scss";
+  
+:root {
+  --primario: #e23939;
+  --gris-claro: #b8b8b8;
+  --sombra: 0 0 13px 0 rgba(185, 185, 185, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f2f3fa;
+}
+
+main {
+  overflow-x: hidden;
+  margin: 40px auto;
+}
+
+.page {
+  max-width: 1920px;
+  margin: 0px auto;
+  display: flex;
+  min-height: 100vh;
+  height: 100;
+  flex-direction: column;
+}
+
+.no-seleccionable {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.header-nav{
+  margin-top: 0rem !important;
+}
+.app-body {
+ display: flex;
+ flex-direction: column;
+}
+.container {
+  width: 100%;
+  margin: 0px auto;
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    width: 90%;
+  }
+}
+.title {
+  margin-top: 1rem;
+  color: #281b74;
+  font-weight: 700;
+  font-size: 3rem;
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    font-size: 2rem;
+    text-align: center;
+  }
+  @media (max-width: 375px) and (min-width: 100px) {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.sub-title {
+  text-decoration: none !important;
+  color: #281b74;
+  @media screen and (max-width: 700px) and (min-width: 200px) {
+    text-align: center;
+  }
+}
+
+.title-long {
+  font-size: 19px;
+  @media screen and (max-width: 1100px) and (min-width: 800px) {
+    font-size: 14px;
+  }
+}
+
+.logo {
+  @media (max-width: 375px) and (min-width: 100px) {
+    width: 100%;
+  }
+}
+
+//card beneficios

@@ -1,0 +1,272 @@
+.contact-container {
+  margin: 80px auto auto auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 700px) and (min-width: 200px) {
+    width: 90%;
+  }
+
+  > h2 {
+    text-align: center;
+  }
+}
+
+.green-span {
+  color: #24b99c;
+  font-weight: bold;
+}
+
+.item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.item-form {
+  margin-top: 1.5rem;
+  color: red;
+  font-size: 0.75em;
+  display: relative;
+}
+
+.single-contact {
+  width: 50%;
+  height: fit-content;
+  margin-bottom: 2rem;
+  @media screen and (max-width: 1024px) and (min-width: 200px) {
+    width: 100%;
+  }
+}
+.card-single-header > h3 {
+  font-size: 22px;
+  text-align: center;
+  color: blueviolet;
+}
+
+.special {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(105, 86, 216, 0.4);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-body {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.8rem;
+
+  > * > input,
+  textarea {
+    margin-top: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+
+  > input[type="submit"] {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+#textarea {
+  font-family: "Roboto", sans-serif;
+
+  font-weight: normal;
+  font-size: 13.8px;
+}
+
+input {
+  padding: 0.8rem 0.5rem;
+}
+
+.input-double {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+   
+  > input {
+    //position: absolute;
+    width: 100%;
+  }
+  > svg {
+    position: relative;
+    left: 93%;
+    margin-top: 0.5rem;
+
+    @media screen and (max-width: 700px) and (min-width: 200px) {
+      left: 85%;
+    }
+  }
+}
+
+.none {
+  display: none;
+}
+
+.error-spacing {
+  margin-top: 2.2rem;
+}
+
+.input-form {
+  border: 1px solid cadetblue;
+  border-radius: 11px;
+}
+
+.input-form-error {
+  border: 1px solid red;
+  border-radius: 11px;
+}
+textarea {
+  border: 1px solid cadetblue;
+  border-radius: 11px;
+  font-size: 11px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+/*
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+    */
+input[type="submit"] {
+  padding: 0.5rem 0.5rem;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.pass {
+  fill: #24b99c;
+}
+.denied {
+  fill: red;
+}
+
+.container-contact {
+  display: flex;
+  grid-gap: 1rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.contact-form {
+  margin-top: -2rem;
+}
+
+.loader {
+  margin: 10% auto;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #38204c;
+  border-right: 16px solid transparent;
+  border-bottom: 16px solid #38204c;
+  border-left: 16px solid transparent;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 4s linear infinite;
+  // margin: auto;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center-loader {
+  margin: 10% auto;
+}
+.button-proyects {
+  background-color: rgb(105, 86, 216);
+  &:hover {
+    background-color: #38204c;
+  }
+}
+.button-proyects {
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1.2rem;
+  width: 100% !important;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 0.375rem 1.5rem;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: all 0.5s ease;
+}
+
+.card-single {
+  background-color: #edeafa;
+  color: #38204c;
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 450px) and (min-width: 200px) {
+    padding: 1.5rem 0.5rem 0rem 2rem;
+  }
+  @media screen and (max-width: 700px) and (min-width: 450px) {
+    padding: 1.5rem 1rem 0rem 1rem;
+  }
+}
+.card-single {
+  white-space: nowrap;
+  height: inherit;
+  padding: 1.5rem 3rem 0rem 3rem;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+.card-single-header > h2 {
+  font-size: 3rem;
+  text-align: center;
+  @media screen and (max-width: 700px) and (min-width: 200px) {
+    font-size: 1.9rem;
+  }
+}
+
+.text-area-item {
+  padding-top: 1rem !important;
+}
+
+textarea {
+  padding: 10px;
+}
+.card-single-header {
+margin-bottom: 1.5rem;
+}

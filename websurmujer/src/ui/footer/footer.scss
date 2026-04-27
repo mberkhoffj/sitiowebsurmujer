@@ -1,0 +1,250 @@
+.footer {
+  background: #38204c;
+  width: 100%;
+  padding: 20px 0px;
+}
+.footer-subtitle  p:hover {
+    color:#24b99c !important;
+    cursor: pointer;
+}
+.footer-ayuda  p:hover {
+    color:#24b99c !important;
+    cursor: pointer;
+  
+}
+.container-footer {
+
+  @media screen and (max-width: 1024px) and (min-width: 600px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  & > .section-footer-help {
+    @media screen and (max-width: 600px) and (min-width: 200px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    margin-top: 1rem;
+    color: white !important;
+    font-weight: 200;
+    font-family: "Roboto", sans-serif;
+
+    > h4 > svg {
+      fill: white !important;
+    }
+
+    & > ul {
+      font-size: 14px;
+      list-style: none;
+      margin-top: 0.5rem;
+      margin-left: -2rem;
+
+      > li {
+        margin-top: 0.5rem;
+        > a{
+          text-decoration: none;
+          color:white !important;
+        }
+      }
+    }
+  }
+
+
+}
+.section-logo {
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.container-footer {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 1024px) and (min-width: 600px) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 600px) and (min-width: 200px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  & > .section-footer {
+    @media screen and (max-width: 600px) and (min-width: 200px) {
+      width: 100%;
+      display: flex;
+      /* justify-content: center; */
+      flex-direction: column;
+      /* align-self: center; */
+      align-items: flex-start;
+    }
+    margin-top: 1rem;
+    color: white !important;
+    font-weight: 200;
+    font-family: "Roboto", sans-serif;
+
+    > h4 > svg {
+      fill: white !important;
+    }
+
+    & > ul {
+      font-size: 14px;
+      list-style: none;
+      margin-top: 0.5rem;
+
+      > li {
+        margin-top: 0.5rem;
+        > a{
+          text-decoration: none;
+          color:white !important;
+        }
+      }
+    }
+  }
+}
+
+.section-footer:nth-child(1){
+  align-items: center;
+}
+
+.links-footer > ul > li > a{
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover{
+    color:#24b99c;
+  }
+}
+
+.title-footer {
+  display: block;
+  display: flex;
+  align-items: center;
+  > span {
+    font-weight: 200;
+    font-size: 18px !important;
+    color: white !important;
+    margin-left: 2rem;
+  }
+
+  > p {
+    margin-bottom: -0.3rem;
+    margin-left: 0.2rem;
+    font-size: 14px;
+    font-weight: bold;
+    color: #24b99c;
+  }
+}
+
+.adrees-footer,
+.phone-footer {
+  > a {
+    color: white !important;
+    text-decoration: none;
+
+
+  }
+  display: flex;
+  align-items: center;
+}
+
+.phone-footer {
+  flex-direction: column;
+  align-items: flex-start;
+  > a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+  }
+  > * > svg {
+    fill: #24b99c;
+    margin-right: 0.5rem;
+  }
+}
+
+.adrees-footer {
+  > svg {
+    fill: white !important;
+    margin-right: 0.5rem;
+  }
+}
+
+.network {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: -2rem;
+  &:hover{
+    color:#24b99c;
+    cursor: pointer;
+  }
+}
+
+.icon-instagram {
+  > svg {
+    fill: rgb(221, 42, 123);
+    background: white;
+    border-radius: 12px;
+  }
+}
+
+.icon-facebook {
+  > svg {
+    background: white;
+    fill: rgb(59, 89, 152) ;
+  }
+}
+
+.icon-twitter {
+  > svg {
+    fill: rgb(8, 160, 233) !important;
+  }
+}
+
+.icon-in {
+  > svg {
+    background: white !important;
+
+    fill: rgb(0, 119, 181) !important;
+  }
+}
+//svg
+.footer-logo > svg {
+  fill: white !important;
+  width: 250px;
+}
+
+.cls-1,
+.cls-2.cls-2 {
+  font-size: 60.17px;
+  font-family: "Roboto", sans-serif;
+}
+.cls-3 {
+  letter-spacing: -0.02em;
+}
+.cls-4 {
+  letter-spacing: 0em;
+}
+
+.cls-5 {
+  font-weight: bold;
+  fill: #24b99c !important;
+}
+
+.list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
